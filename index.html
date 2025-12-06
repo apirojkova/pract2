@@ -6,9 +6,10 @@
     <title>Revo Coffee Vietnam - Персонализированный кофе</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
+    <button class="button">Обычная кнопка</button>
+    <button class="button" disabled>Необычная кнопка</button>
 </head>
 <body>
-
     <header>
         <div>@ Revo Coffee Vietnam - 2018</div>
         <div>
@@ -188,32 +189,36 @@
                 <p>@ Revo Coffee Vietnam - 2018</p>
             </div>
 
-            <div>
-                <h4>Категории</h4>
+            <!-- Навигационное меню с якорями-->
+            <nav class="navigation">
                 <ul>
-                    <li><a href="#">Кофе</a></li>
-                    <li><a href="#">Фильтры с цветным покрытием</a></li>
-                    <li><a href="#">Комбо фильтр-кофе</a></li>
-                    <li><a href="#">Подарочные наборы</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#shop">Каталог</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <div>
-                <h4>Поддержка</h4>
-                <ul>
-                    <li><a href="#">Свяжитесь с нами</a></li>
-                    <li><a href="#">Доставка и возврат</a></li>
-                    <li><a href="#">Частые вопросы</a></li>
-                </ul>
-            </div>
+            <!-- Разделы с соответсвующими якорями -->
+            <selection id="about">
+                <h2>О нас</h2>
+                <p>Содержание раздела о компании...</p>
+            </selection>
 
-            <div>
-                <h4>Контакты</h4>
-                <ul>
-                    <li>info@revocoffee.vn</li>
-                    <li>+7 (123) 456-78-90</li>
-                </ul>
-            </div>
+            <selection id="services">
+                <h2>Услуги</h2>
+                <p>Описание предоставляемых услуг...</p>
+            </selection>
+
+            <selection id="shop">
+                <h2>Каталог</h2>
+                <p>Описание предоставляемой продукции...</p>
+            </selection>
+
+            <selection id="contsct">
+                <h2>Контакты</h2>
+                <p>Контактная информация...</p>
+            </selection>
         </div>
     </footer>
     
